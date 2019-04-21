@@ -3,3 +3,5 @@
 
 ## Challenge 02: Array Shift
 
+## Challenge 03: Arary Binary Search
+
