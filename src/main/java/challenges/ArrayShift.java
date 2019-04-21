@@ -4,36 +4,24 @@ import java.util.Arrays;
 
 public class ArrayShift {
     public static void main(String[] args) {
-        int[] array = {2, 4, 6, 8};
-        int middle = 2;
-        int value = 5;
-        for (int i = array.length - 1; i < middle; i++) {
-            array[i] = array[i+ 1];
+        //test arrays and value
+        insertShiftArray(new int[] {1, 3, 5}, 7);
+        insertShiftArray(new int[] {2, 4, 6, 8}, 7);
+        insertShiftArray(new int[] {1, 2, 3, 4, 5, 6}, 7);
+    }
+
+    public static int[] insertShiftArray(int[] originalArray, int addedValue) {
+        int[] tempArray = new int[originalArray.length + 1];
+        for (int i = 0; i < originalArray.length; i++) {
+            tempArray[i] = originalArray[i];
         }
-        array[middle] = value;
-        System.out.println(Arrays.toString(array));
+        for (int j = originalArray.length / 2; j < originalArray.length; j++) {
+            tempArray[j + 1] = originalArray[j];
+        }
+        tempArray[originalArray.length / 2] = addedValue;
+
+        System.out.println(Arrays.toString(originalArray));
+        System.out.println(Arrays.toString(tempArray));
+        return tempArray;
     }
 }
-
-
-
-
-
-
-
-//// add tests
-//        public static int[] insertShiftArray (int[] inputArray,int inputInt){
-//
-//            int[] holdArray = new int[(inputArray.length / 2) + 1];
-//            int midPoint = (inputArray.length / 2) + 1;
-//            for (int j = midPoint; j < ArrayList.; j++) {
-//                holdArray.add(j);
-//            }
-//            for (int k = 0; k < holdArray.length; k++) {
-//                for (int l = midPoint; l < ArrayList.length(); l++) {
-//                    k = l;
-//                }
-//            }
-//            return ArrayList;
-//        }
-//    }
