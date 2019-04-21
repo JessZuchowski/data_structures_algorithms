@@ -20,8 +20,8 @@ public class ArrayShift {
         }
         tempArray[originalArray.length / 2] = addedValue;
 
-        System.out.println(Arrays.toString(originalArray));
-        System.out.println(Arrays.toString(tempArray));
+        System.out.println("input:" + Arrays.toString(originalArray));
+        System.out.println("output:" + Arrays.toString(tempArray));
         return tempArray;
     }
 }
