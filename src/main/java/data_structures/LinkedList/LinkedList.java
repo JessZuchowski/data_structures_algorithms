@@ -1,5 +1,8 @@
 package data_structures.LinkedList;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LinkedList {
 
     //fields
@@ -39,10 +42,15 @@ public class LinkedList {
         return false;
     }
     //return collection of all current node values.
-    public void print() {
+    public List<Integer> print() {
         Node currentNode = this.head;
+        List<Integer> list = new ArrayList<>();
         while (currentNode != null) {
             System.out.println(currentNode.value);
+            list.add(currentNode.value);
+            currentNode = currentNode.next;
         }
+        System.out.println(list);
+        return list;
     }
 }
