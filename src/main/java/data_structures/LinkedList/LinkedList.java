@@ -53,4 +53,19 @@ public class LinkedList {
         System.out.println(list);
         return list;
     }
+
+    //code challenge 07 k-th from end
+    public <T>  nullIndexSearch(int k, <T> linkedListGeorge) {
+        <T> current = linkedListGeorge.head;
+        ArrayList <T>  linkedListArrayList = new ArrayList<>();
+        while (current != null) {
+            linkeListArrayList.addCurrent;
+            current = current.reference;
+        }
+        for (int i = linkedListArrayList.size; i > 0; i--) {
+            if (i = k) {
+                return current.value;
+            }
+        }
+    }
 }
