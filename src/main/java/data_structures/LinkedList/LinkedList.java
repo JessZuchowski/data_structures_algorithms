@@ -68,4 +68,48 @@ public class LinkedList {
             }
         }
     }
+
+    //code challenge 08 merged lists
+    public Node mergedLists(Node nodeA, Node nodeB) {
+        if (nodeA == null) {
+            return nodeB;
+        }
+            else(nodeB == null)
+                return nodeA;
+
+            Node head;
+            if (nodeA.data < nodeB.data) {
+            head = nodeA;
+            nodeA = nodeA.next;
+
+            else {
+                head = nodeB;
+                nodeB = nodeB.next;
+            }
+
+            Node current = head;
+            while ((nodeA != null) || (nodeB != null)) {
+                if (nodeA == null) {
+                    current.next = nodeB;
+                    return head;
+                    else if (nodeB == null) {
+                        current.next = nodeA;
+                        return head;
+                    }
+                if (nodeA.data < nodeB.data) {
+                    current.next = nodeA;
+                    current = current.next;
+                    nodeA = nodeA.next;
+                }
+                else {
+                    current.next = nodeB;
+                    current = current.next;
+                    nodeB = nodeB.next;
+                }
+                }
+                current.next = null;
+                return head;
+            }
+        }
+    }
 }
