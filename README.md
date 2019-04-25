@@ -8,3 +8,5 @@
 ## Lab 05: Implement a Linked List
 
 ## Challenge 07: k-th from end of Linked List
+
+## Challenge 08: Merged Linked List
