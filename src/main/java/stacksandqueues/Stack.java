@@ -2,6 +2,7 @@ package stacksandqueues;
 
 public class Stack {
     public Node top;
+    public Node temp;
 
     public Stack () {
         this.top = null;
@@ -17,5 +18,21 @@ public class Stack {
             newNode.next = this.top;
             this.top = newNode;
         }
+    }
+
+    //remove node from top of stack and return node's value
+    public Node pop() {
+        if (top == null) {
+
+            Node temp = null;
+            top = top.next;
+            temp.next = null;
+        }
+        return temp;
+    }
+
+    //return value of node on top of stack
+    public Node peek() {
+        return top;
     }
 }

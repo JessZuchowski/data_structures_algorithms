@@ -19,4 +19,6 @@
 
 ## Approach:
 
-Modeled after my previous lab, Lab 05: Linked Lists for features 1, 2a, 2b, 3a, and 3b.  
+Modeled after my previous lab, Lab 05: Linked Lists for features 1, 2a, 2b, 3a, and 3b. 
+
+## API 
