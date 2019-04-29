@@ -30,6 +30,14 @@ public class LinkedListTest {
         assertEquals(5, test.head.next.next.value);
     }
 
+    @Test
+    public void testIncludes() {
+        LinkedList test = new LinkedList();
+        test.insert(5);
+        test.insert(7);
 
+        assertTrue(test.includes(5));
+        assertFalse(test.includes(11));
+    }
 
 }

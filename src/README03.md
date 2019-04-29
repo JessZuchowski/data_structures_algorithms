@@ -6,4 +6,4 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 Looped through if statements to check the mid point of the array for the target.
 
 ### Solution
-<img src="401/data_structures_algorithms/src/assets/array_binary_search.jpg">
+<img src="C:\Users\jessz\codefellows\401\data_structures_algorithms\src\assets\array_binary_search.jpg">
