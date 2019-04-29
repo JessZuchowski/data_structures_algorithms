@@ -10,4 +10,4 @@ Write the following methods for the Linked List class:
 3. .insertAfter(value, newValue) which adds a new node with the given newValue immediately after the first value node. 
 
 ## Solution:
-<img src="401/data_structures_algorithms/src/assets/ll_insertions.jpg">
+<img src="assets/ll_insertions.jpg">

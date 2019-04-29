@@ -7,4 +7,4 @@ Paired with Merry Cimakasky Write a function called insertShiftArray which takes
 First attempt was at using ArrayList. Changed approach to not use imports.
 
 ##Solution 
-<img src="assets\array_shift.jpg">
+<img src="assets/array_shift.jpg">
