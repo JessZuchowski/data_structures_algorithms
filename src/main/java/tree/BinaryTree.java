@@ -1,5 +1,8 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinaryTree {
 
     public Node root;
@@ -10,7 +13,7 @@ public class BinaryTree {
     public BinaryTree(int value) {
         root = new Node(value);
     }
-    
+
 
 
 //    preOrder(node) {
@@ -54,8 +57,10 @@ public class BinaryTree {
 //        output node.value
 //
 //    }
-    public void postOrder (Node node) {
-       if (node == null)
-           return;
+    public List<Integer> preOrder () {
+        ArrayList<Integer> list = new ArrayList<>();
+        preOrder(root, list);
+        return list;
+
     }
 }

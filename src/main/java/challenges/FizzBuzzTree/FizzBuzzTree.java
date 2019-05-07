@@ -1,13 +1,16 @@
-package tree;
+package challenges.FizzBuzzTree;
 
-public class BinarySearchTree {
+import tree.Node;
 
-    public Node root;
+public class FizzBuzzTree {
 
-//    insertion: recursive method to add value to left if less than current, add to right if greater than
-    public Node addRecursive(Node current, int value) {
+    //just tree so far, need to change if statement returns to change values
+    public tree.Node root;
+
+    //    insertion: recursive method to add value to left if less than current, add to right if greater than
+    public tree.Node addRecursive(tree.Node current, int value) {
         if (current == null) {
-            return new Node(value);
+            return new tree.Node(value);
         }
         if (value < current.value) {
             current.left = addRecursive(current.left, value);
