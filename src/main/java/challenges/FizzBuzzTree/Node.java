@@ -1,10 +1,9 @@
 package challenges.FizzBuzzTree;
 
 public class Node {
-    public class Node {
         int value;
-        tree.Node left;
-        tree.Node right;
+        Node left;
+        Node right;
 
         public Node(int value) {
 

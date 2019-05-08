@@ -1,25 +1,23 @@
 package challenges.FizzBuzzTree;
 
-import tree.Node;
+
 
 public class FizzBuzzTree {
 
     //just tree so far, need to change if statement returns to change values
-    public tree.Node root;
+    public Node root;
 
     //    insertion: recursive method to add value to left if less than current, add to right if greater than
-    public tree.Node addRecursive(tree.Node current, int value) {
+    public Node addRecursive(Node current, int value) {
         if (current == null) {
-            return new tree.Node(value);
+            return new Node(value);
         }
         if (value < current.value) {
             current.left = addRecursive(current.left, value);
         } else if (value >= current.value) {
             current.right = addRecursive(current.right, value);
         }
-//        else {
-//            return current;
-//        }
+
         return current;
     }
 

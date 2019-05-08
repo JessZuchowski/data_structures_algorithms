@@ -14,9 +14,7 @@ public class BinarySearchTree {
         } else if (value >= current.value) {
             current.right = addRecursive(current.right, value);
         }
-//        else {
-//            return current;
-//        }
+
         return current;
     }
 

@@ -10,6 +10,6 @@
 
 ## Resources: 
 
-<a href="https://www.geeksforgeeks.org/binary-tree-set-1-introduction/">Geeks for Geeks</a>
+<a href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/">Geeks for Geeks</a>
 
 <a href="https://www.baeldung.com/java-binary-tree">Baeldung</a> 
