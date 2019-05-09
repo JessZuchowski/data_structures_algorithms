@@ -31,4 +31,8 @@ public void postOrder(Node node, int value) {
     postOrder(node.right, value);
     System.out.println(value);
 }
+
+public void findMaximumValue() {
+    
+}
 }
