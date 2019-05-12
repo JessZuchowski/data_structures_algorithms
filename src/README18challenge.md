@@ -10,4 +10,4 @@ Traverse the tree and return three values for every node: Node's data, max to no
 
 ## Solution: 
 
-<img src=""> 
+<img src="\assets/find_max_value.jpg"> 
