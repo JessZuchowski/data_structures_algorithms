@@ -14,5 +14,5 @@ Create a node class and array list. Implement a hash function to find the index 
 
 ## References
 
-<a href="https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/">Geeks for Geeks Hash Table</a>
+<a href="https://javarevisited.blogspot.com/2015/07/how-to-find-duplicate-words-in-string-java.html">Javarevisited</a>
 
