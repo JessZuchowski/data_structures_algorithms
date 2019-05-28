@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Hashtable {
 
+    //basic hash
     public static int hash(String key) {
         char[] array = key.toCharArray();
 

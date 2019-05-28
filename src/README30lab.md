@@ -10,5 +10,9 @@ Implement a hashtable with the following methods:
 
 ## Approach
 
-Create a linked list
+Create a node class and array list. Implement a hash function to find the index of a key. Add key/value pair to hash and insert in to list. 
+
+## References
+
+<a href="https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/">Geeks for Geeks Hash Table</a>
 
