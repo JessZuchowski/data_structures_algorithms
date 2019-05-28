@@ -13,3 +13,7 @@ Loop over array and .add() to hashset, print when false is returned.
 ## Solution 
 
 <img src="401/data_structures_algorithms/src/assets/repeated_word.jpg">
+
+## References
+
+<a href="https://javarevisited.blogspot.com/2015/07/how-to-find-duplicate-words-in-string-java.html"> Javarevisited </a>
