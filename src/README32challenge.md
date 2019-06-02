@@ -10,6 +10,8 @@ Write a function called tree_intersection that takes in two binary tree paramete
 
 ## Solution 
 
+<img src="401/data_structures_algorithms/src/assets/tree_intersection.jpg">
+
 ## References
 
 <a href="https://www.geeksforgeeks.org/print-common-nodes-in-two-binary-search-trees/"> Geeks for Geeks </a>

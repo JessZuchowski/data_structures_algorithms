@@ -23,16 +23,6 @@ public class Hashtable {
         public String value;
     }
 
-    public static void main(String[] args) {
-        //create some hashes
-        System.out.println("weevil".hashCode());
-        System.out.println("junebug".hashCode());
-        System.out.println("stinkbug".hashCode());
-
-        //linked list to account for collisions
-        List<String>[] bucket = new ArrayList[1024];
-
-    }
     //add values to buckets using keys
     public static void add(String key, String value) {
         int hash = hash(key);
