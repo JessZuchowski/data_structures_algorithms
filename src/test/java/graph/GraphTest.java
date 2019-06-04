@@ -21,5 +21,6 @@ public class GraphTest {
         graph.addEdge(3, 5);
 
         return graph;
+
     }
 }

@@ -90,7 +90,22 @@ public class Graph {
         adjacent.get(nv2).add(nv1);
     }
 
-    //get Nodes method
+    //get Nodes method by traversal, keep track of visited nodes and return as Set
+    public Set<Integer> getNodeVertices(Graph graph, int root) {
+        Set<Integer> visited = new LinkedHashSet<>();
+        Stack<Integer> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            int rootVertex = stack.pop();
+            if (!visited.contains(rootVertex)) {
+                visited.add(rootVertex);
+                for (NodeVertex nv : graph.getNeighbors(rootVertex)) {
+                    stack.push(nv.vertex);
+                }
+            }
+        }
+        return visited;
+    }
 
     //get Neighbors method
     List<NodeVertex> getNeighbors(int vertex) {
@@ -98,6 +113,8 @@ public class Graph {
         return adjacent.get(new NodeVertex(vertex));
     }
 
-    //size method
-
+    //get size method
+    public int getSize() {
+        return adjacent.size();
+    }
 }
